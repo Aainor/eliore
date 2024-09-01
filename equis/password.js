@@ -1,9 +1,12 @@
 // Función para verificar la contraseña
 function verificarContraseña() {
     const contraseñas = {
-        "codigo1": "https://www.ejemplo1.com",
-        "codigo2": "https://www.ejemplo2.com",
-        "codigo3": "https://www.ejemplo3.com"
+        "vn": "pagina1/VisualNovel.html",
+        "VN": "pagina1/VisualNovel.html",
+        "The Only Exception": "pagina2/TOE.html",
+        "TheOnlyException": "pagina2/TOE.html",
+        "the only exception": "pagina2/TOE.html",
+        "theonlyexception": "pagina2/TOE.html",
     };
 
     const input = document.getElementById("password").value;
@@ -14,15 +17,6 @@ function verificarContraseña() {
         alert("Contraseña incorrecta. Inténtalo de nuevo.");
     }
 }
-
-function showErrorPopup() {
-    document.getElementById('error-message').classList.remove('hidden');
-  }
-  
-  function closePopup() {
-    document.getElementById('error-message').classList.add('hidden');
-  }
-  
 
 // Agregar el evento de escucha para la tecla Enter
 document.getElementById("password").addEventListener("keyup", function(event) {

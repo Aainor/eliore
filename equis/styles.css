@@ -107,36 +107,3 @@ button:hover {
     background: #8C77F2;
 }
 
-.error-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
-    z-index: 1000; /* Asegura que el popup esté por encima de otros elementos */
-  }
-  
-  .error-popup button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ce1619;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .error-popup button:hover {
-    background-color: #cc0007;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
