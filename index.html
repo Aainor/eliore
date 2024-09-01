@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>🌹</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-header">
+                <span class="heart" id="heart1">❤</span>
+                <span class="heart" id="heart2">❤</span>
+                <span class="heart" id="heart3">❤</span>
+                <span class="heart" id="heart4">❤</span>
+            </div>
+            <div class="content">
+                <h2>Bienvenida.</h2>
+                <img src="/equis/ajam/kuromi_pass.png" alt="Kuromi" class="cute-img">
+                <input type="password" id="password" placeholder="Ingresa un código.">
+                <button onclick="verificarContraseña()">❥</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="error-message" class="error-popup hidden">
+        <p>Código incorrecto. Inténtalo de nuevo.</p>
+        <button onclick="closePopup()">Aceptar</button>
+    </div>
+
+    <script src="password.js"></script>
+    
+</body>
+</html>
+
