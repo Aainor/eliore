@@ -3,10 +3,8 @@ function verificarContraseña() {
     const contraseñas = {
         "vn": "pagina1/VisualNovel.html",
         "VN": "pagina1/VisualNovel.html",
-        "The Only Exception": "pagina2/TOE.html",
-        "TheOnlyException": "pagina2/TOE.html",
-        "the only exception": "pagina2/TOE.html",
-        "theonlyexception": "pagina2/TOE.html",
+        "TOE": "pagina2/TOE.html",
+        "toe": "pagina2/TOE.html",
     };
 
     const input = document.getElementById("password").value;
