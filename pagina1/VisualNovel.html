@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Novel</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlaza el archivo CSS -->
 </head>
 <body>
     <div id="game-container">
-        <div id="scene">
-            <img id="background" src="" alt="background">
-            <div id="character"></div>
+        <!-- Imagen del fondo -->
+        <div id="background">
+            <img src="visual/fiesta.jpg" alt="Fondo" class="background-image">
+            <!-- Contenedor del personaje -->
+            <div id="character" class="character-container"></div>
         </div>
-        <div id="dialogue-container">
+
+        <!-- Cuadro de diálogo -->
+        <div id="dialogue-box">
             <div id="character-name"></div>
-            <div id="dialogue-text"></div>
+            <p id="dialogue-text"></p>
         </div>
+
+        <!-- Botón para avanzar al siguiente diálogo -->
+        <button id="next-dialogue-button" onclick="loadDialogue()">Siguiente</button>
+
+        <!-- Contenedor de opciones -->
         <div id="choices-container"></div>
     </div>
-    <script src="visual.js"></script>
+
+    <script src="visual.js"></script> <!-- Enlaza el archivo JavaScript -->
 </body>
 </html>
