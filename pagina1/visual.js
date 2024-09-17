@@ -6,7 +6,8 @@ let currentDialogueIndex = 0; // Controla el índice del diálogo en la escena a
 // Definir las escenas de la visual novel
 const scenes = [
     {
-        background: 'visual/fiesta.jpg',
+        background: 'visual/fiesta1.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: '', text: 'Hacía tiempo que no salías de casa. La rutina es agotadora, tu vida empezó a resumirse en trabajar, comer y dormir. Nada interesante sucedía y comenzabas a sentirte depresiva, hasta que tus amigas te convencieron de salir de tu cueva. Pero la fiesta es ruidosa, demasiado para tu gusto. Tus amigas se están divirtiendo pero de pronto sientes cierta ansiedad y te alejas un poco, apoyando la espalda en la pared y viendo a tus amigas divertirse a lo lejos. Sientes una pesada necesidad de volver a casa.' },
             { speaker: '', text: 'Aburrida y agotada, decides mirar alrededor, quizás buscando una excusa para huir, cuando notas a alguien, alguien que parece estar algo fuera de lugar, observando todo desde una esquina.' },
@@ -14,10 +15,9 @@ const scenes = [
         ]
     },
     {
-        background: 'visual/fiesta.jpg',
+        background: 'visual/fiesta2.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
-            { speaker: '???', text: '...', showCharacter: false},
-            { speaker: 'Angie', text: '...' },
             { speaker: '???', text: '...', showCharacter: false},
             { speaker: 'Angie', text: '...' },
             { speaker: '???', text: '¿Conocés The Legend of Zelda?', showCharacter: false},
@@ -25,17 +25,18 @@ const scenes = [
         ]
     },
     {
-        background: 'visual/fiesta.jpg',
+        background: 'visual/fiesta2.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: '???', text: '¡Es buenísimo! Mi parte favorita es tocar la ocarina. Es como si pudieras controlar el mundo con la música.', showCharacter: false},
             { speaker: 'Angie', text: '...' },
             { speaker: '', text: '¿y esta random?' },
-            { speaker: '???', text: 'De hecho, en Ocarina of Time, hay un personaje llamado Bongo Bongo, que es un jefe del juego. Pero lo curioso es que el diseño de Bongo Bongo fue inspirado en una broma de los desarrolladores.', showCharacter: false},
-            { speaker: '???', text: 'Es como una mezcla de manos y un ojo flotante. Y, en realidad, la inspiración para su apariencia vino de una reunión en la que alguien estaba jugando con un globo de los ojos que se movían.', showCharacter: false},
+            { speaker: '???', text: 'De hecho, en Ocarina of Time, hay un lugar llamado el Templo de las Sombras. Es bastante oscuro y espeluznante.', showCharacter: false},
+            { speaker: '???', text: 'Originalmente, iba a ser aún más terrorífico. Iban a incluir símbolos y detalles que hacían alusión a torturas y cosas bastante macabras, pero lo suavizaron para no asustar tanto a los jugadores.', showCharacter: false},
             { speaker: 'Angie', text: '...' },
-            { speaker: '???', text: 'Rarísimo, ¿no? Y también, según dicen, el nombre "Bongo Bongo" fue elegido porque sonaba tonto y no tenía un significado real.', showCharacter: false},
+            { speaker: '???', text: 'Aún así, el lugar es raro y te da escalofríos. Es uno de esos momentos en que te das cuenta de que el juego tiene un lado bastante oscuro.', showCharacter: false},
             { speaker: 'Angie', text: '...' },
-            { speaker: '???', text: 'C... Capaz no te gusta Zelda. O no lo conoces.', showCharacter: false},
+            { speaker: '???', text: 'C... Capaz no te gusta Zelda. O no lo conoces.', showCharacter: false},    
         ],
         choices: [
             { text: '...', nextScene: 3 }, // Neutral Ending 1
@@ -46,6 +47,7 @@ const scenes = [
     {
         background: 'visual/fiesta.jpg',
         character: 'visual/orif2.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: '???', text: 'Disculpá. Creo que hablé demasiado, mejor te dejo en paz.' },
             { speaker: '', text: 'Pero antes de que llegaras a disculparte, la desconocida se fue apurada, mezclándose entre la gente de la fiesta y desapareciendo de tu vida. No entendiste muy bien qué acaba de pasar, pero aún así te preguntas qué hubiera pasado si continuabas la conversación.' }
@@ -56,6 +58,7 @@ const scenes = [
     {
         background: 'visual/fiesta.jpg',
         character: 'visual/orif9.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: '???', text: '... Perdón... Solamente intentaba hablarte...' },
             { speaker: '', text: 'Se va corriendo, desapareciendo entre la gente. Ni siquiera intentás seguirla. Es una rarita. Aunque, no sabés bien por qué, pero te sentís un poco culpable. Podrías haber sido más amable.' }
@@ -66,15 +69,17 @@ const scenes = [
     {
         background: 'visual/fiesta.jpg',
         character: 'visual/orif4.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: 'Angie', text: 'Está bien. No soy muy fan de eso, pero es un buen dato curioso.' },
-            { speaker: '???', text: '¿En serio? En realidad estaba buscando excusas para hablarte. No estoy acostumbrada a esto.' },
-            { speaker: 'Angie', text: 'No te preocupes, es... un poco tierno en realidad.' }
+            { speaker: '???', text: '¿En serio? En realidad estaba buscando excusas para hablarte. No estoy acostumbrada a esto. No te incomodé con lo que te contaba, ¿o sí?' },
+            { speaker: 'Angie', text: 'No te preocupes. Aunque no sea muy fanática del Zelda, a mí también me gustan las cosas de terror.' }
         ]
     },
     {
         background: 'visual/fiesta.jpg',
         character: 'visual/orif1.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: '???', text: '¿De verdad pensás eso? Tenía miedo de espantarte, soy malísima para iniciar conversación.' },
             { speaker: 'Angie', text: 'No, para nada. De hecho, todo esto fue refrescante... aunque no voy a negar que un poco extraño. Pero lo necesitaba.' }
@@ -83,6 +88,7 @@ const scenes = [
     {
         background: 'visual/fiesta.jpg',
         character: 'visual/orif4.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: '???', text: 'Me alegra ser de ayuda. ¿Sabés? Acabo de darme cuenta de que hablé un montón y no pregunté ni tu nombre. ¿Cómo te llamás?' }
         ]
@@ -90,6 +96,7 @@ const scenes = [
     {
         background: 'visual/fiesta.jpg',
         character: 'visual/orif3.png',
+        music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: 'Angie', text: 'Angie. Es un gusto... Ehh...' },
             { speaker: 'Ori', text: 'Oriana. El placer es mío.' }
@@ -102,19 +109,37 @@ const scenes = [
     },
 ];
 
-// Cargar la escena actual
+let currentSong = '';  // Para almacenar la canción actual
+
+// Función para reproducir música de fondo en bucle
+function playMusic(songPath) {
+    const audioElement = document.getElementById('background-music');
+    
+    // Cambia la canción solo si es diferente a la que ya está sonando
+    if (currentSong !== songPath) {
+        currentSong = songPath;  // Actualiza la canción actual
+        audioElement.src = songPath;  // Cambia la fuente de la música
+        audioElement.load();          // Carga el nuevo archivo
+        audioElement.play();          // Reproduce la música
+    }
+}
+
 function loadScene(sceneIndex) {
     currentSceneIndex = sceneIndex;
     currentDialogueIndex = 0; // Reiniciar el índice del diálogo
 
     const scene = scenes[sceneIndex];
 
-    // Actualizar el fondo de la escena
-    document.getElementById('background').src = scene.background;
+    // Cambiar el fondo de la escena
+    document.getElementById('background').style.backgroundImage = `url('${scene.background}')`;
 
-    // Mostrar el primer diálogo
+    // Reproducir la música de la escena
+    playMusic(scene.music);
+
+    // Cargar el primer diálogo
     loadDialogue();
 }
+
 
 // Cargar el diálogo actual y actualizar el personaje que habla
 function loadDialogue() {

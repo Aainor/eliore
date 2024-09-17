@@ -3,8 +3,8 @@ function verificarContraseña() {
     const contraseñas = {
         "vn": "pagina1/VisualNovel.html",
         "VN": "pagina1/VisualNovel.html",
-        "TOE": "pagina2/TOE.html",
-        "toe": "pagina2/TOE.html",
+        "TOE": "pagina2/toe.html",
+        "toe": "pagina2/toe.html",
     };
 
     const input = document.getElementById("password").value;

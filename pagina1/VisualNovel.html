@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Novel</title>
+    <title>Ori Pilgrim</title>
     <link rel="stylesheet" href="estilo.css"> <!-- Enlaza el archivo CSS -->
 </head>
 <body>
     <div id="game-container">
+
         <!-- Imagen del fondo -->
         <div id="background">
-            <img src="visual/fiesta.jpg" alt="Fondo" class="background-image">
+           
             <!-- Contenedor del personaje -->
             <div id="character" class="character-container"></div>
         </div>
@@ -22,11 +23,14 @@
         </div>
 
         <!-- Botón para avanzar al siguiente diálogo -->
-        <button id="next-dialogue-button" onclick="loadDialogue()">Siguiente</button>
+        <button id="next-dialogue-button" onclick="loadDialogue()">➤</button>
 
         <!-- Contenedor de opciones -->
         <div id="choices-container"></div>
     </div>
+
+    <!-- Elemento de audio -->
+    <audio id="background-music" loop></audio>
 
     <script src="visual.js"></script> <!-- Enlaza el archivo JavaScript -->
 </body>

@@ -46,62 +46,55 @@ body {
     color: lightblue;
 }
 
-/* Botón de opciones y avance de texto */
-.choice-button,
-#next-dialogue-button {
-    display: inline-block;
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
-}
-
-.choice-button:hover,
-#next-dialogue-button:hover {
-    background-color: #666;
-}
-
-/* Botón de "Siguiente" alineado dentro de la esquina inferior derecha del cuadro de diálogo */
-#next-dialogue-button {
-    position: absolute;
-    bottom: 120px; /* Ahora dentro del cuadro de diálogo */
-    right: 10px; /* Alineado a la derecha */
-}
-
 #choices-container {
     display: flex;
-    flex-direction: row-reverse; /* Alinea los botones en una columna (uno debajo del otro) */
+    flex-direction: column; /* Alinea los botones en una columna */
     align-items: center; /* Centra los botones horizontalmente */
-    justify-content: center; /* Centra los botones verticalmente si es necesario */
-    bottom: 10px; /* Mantén el ajuste de la posición si es necesario */
-    right: 10px; /* Ajusta si necesitas alinearlos de forma distinta */
-    position: absolute; /* Asegúrate de mantener la posición relativa al contenedor */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho si es necesario */
+    justify-content: center; /* Centra los botones verticalmente */
+    position: absolute;
+    top: 50%; /* Posiciona el contenedor al 50% del alto de la pantalla */
+    left: 50%; /* Posiciona el contenedor al 50% del ancho de la pantalla */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que esté perfectamente centrado */
+    width: auto; /* Ajusta el ancho según el contenido */
 }
 
-/* Estilo para los botones de las elecciones */
+/* Botones de las opciones */
 .choice-button {
-    margin: 10px 0; /* Añade espacio entre los botones */
-    width: 20%; /* Ajusta el ancho del botón */
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo similar */
+    color: #fff; /* Color del texto */
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Tamaño de fuente mayor para hacerlo más estético */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para las opciones */
+.choice-button:hover {
+    background-color: rgba(100, 100, 100, 0.7); /* Color cuando se pasa el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento suave */
+}
+
+/* Botón de "Siguiente" */
+#next-dialogue-button {
+    position: absolute;
+    bottom: 100px; /* Ajusta la distancia desde la parte inferior del cuadro */
+    right: -415px; /* Alineado a la derecha */
     padding: 10px 20px;
     background-color: #444;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.choice-button:hover {
+#next-dialogue-button:hover {
     background-color: #666;
 }
 
@@ -110,6 +103,7 @@ body {
 /* Contenedor de la imagen de fondo */
 #background {
     position: relative;
+    bottom: 5.4vh;
     max-width: 90vw; /* Ajusta el ancho máximo en relación con el viewport */
     max-height: 90vh; /* Ajusta la altura máxima para mantener la proporción */
     width: 950px; /* Tamaño base */
@@ -123,7 +117,7 @@ body {
 /* Contenedor del personaje */
 .character-container {
     position: absolute; /* Se posiciona dentro del contenedor de fondo */
-    bottom: 5.4vh; /* Ancla el personaje a la parte inferior del contenedor */
+    bottom: 0vh; /* Ancla el personaje a la parte inferior del contenedor */
     left: 50%; /* Centra horizontalmente el personaje */
     transform: translateX(-50%); /* Asegura el centrado perfecto */
 }
