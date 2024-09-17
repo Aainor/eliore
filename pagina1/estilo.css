@@ -104,10 +104,10 @@ body {
 #background {
     position: relative;
     bottom: 5.4vh;
-    max-width: 90vw; /* Ajusta el ancho máximo en relación con el viewport */
-    max-height: 90vh; /* Ajusta la altura máxima para mantener la proporción */
-    width: 950px; /* Tamaño base */
-    height: 700px; /* Tamaño base */
+    max-width: 70vw; /* Ajusta el ancho máximo en relación con el viewport */
+    max-height: 70vh; /* Ajusta la altura máxima para mantener la proporción */
+    width: 1920px; /* Tamaño base */
+    height: 1078px; /* Tamaño base */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -47,7 +47,7 @@ const scenes = [
         ]
     },
     {
-        background: 'visual/fiesta.jpg',
+        background: 'visual/fiesta.png',
         character: 'visual/orif2.png',
         music: 'visual/fiesta.mp3',
         dialogues: [
@@ -59,7 +59,7 @@ const scenes = [
         choices: null // No hay más elecciones
     },
     {
-        background: 'visual/fiesta.jpg',
+        background: 'visual/fiesta.png',
         character: 'visual/orif9.png',
         music: 'visual/fiesta.mp3',
         dialogues: [
@@ -71,7 +71,7 @@ const scenes = [
         choices: null // No hay más elecciones
     },
     {
-        background: 'visual/fiesta3.png',
+        background: 'visual/fiesta4.png',
         music: 'visual/fiesta.mp3',
         dialogues: [
             { speaker: 'Angie', text: 'Supongo que es un buen juego. Y ese es un dato... Interesante.' },
