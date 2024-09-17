@@ -124,7 +124,7 @@ body {
 
 /* Imagen del personaje */
 .character-container img {
-    max-width: 50vh; /* Ajusta el tamaño del personaje */
+    max-width: 60vh; /* Ajusta el tamaño del personaje */
     height: auto; /* Mantén la proporción */
     display: block;
 }

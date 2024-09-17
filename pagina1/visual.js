@@ -22,25 +22,27 @@ const scenes = [
             { speaker: 'Angie', text: '...' },
             { speaker: '???', text: '¿Conocés The Legend of Zelda?', showCharacter: false},
             { speaker: 'Angie', text: '...' },
-        ]
-    },
-    {
-        background: 'visual/fiesta2.png',
-        music: 'visual/fiesta.mp3',
-        dialogues: [
             { speaker: '???', text: '¡Es buenísimo! Mi parte favorita es tocar la ocarina. Es como si pudieras controlar el mundo con la música.', showCharacter: false},
             { speaker: 'Angie', text: '...' },
             { speaker: '', text: '¿y esta random?' },
             { speaker: '???', text: 'De hecho, en Ocarina of Time, hay un lugar llamado el Templo de las Sombras. Es bastante oscuro y espeluznante.', showCharacter: false},
             { speaker: '???', text: 'Originalmente, iba a ser aún más terrorífico. Iban a incluir símbolos y detalles que hacían alusión a torturas y cosas bastante macabras, pero lo suavizaron para no asustar tanto a los jugadores.', showCharacter: false},
-            { speaker: 'Angie', text: '...' },
+            { speaker: 'Angie', text: '...' }
+        ]
+    },
+    {
+        background: 'visual/fiesta3.png',
+        music: 'visual/fiesta.mp3',
+        dialogues: [
             { speaker: '???', text: 'Aún así, el lugar es raro y te da escalofríos. Es uno de esos momentos en que te das cuenta de que el juego tiene un lado bastante oscuro.', showCharacter: false},
             { speaker: 'Angie', text: '...' },
-            { speaker: '???', text: 'C... Capaz no te gusta Zelda. O no lo conoces.', showCharacter: false},    
+            { speaker: '???', text: '...', showCharacter: false},
+            { speaker: 'Angie', text: '...' },
+            { speaker: '???', text: 'C... Capaz no te gusta Zelda. O no lo conocés.', showCharacter: false},    
         ],
         choices: [
             { text: '...', nextScene: 3 }, // Neutral Ending 1
-            { text: 'Está bien. No soy muy fan de eso, pero conozco el juego, y supongo que es un buen dato curioso.', nextScene: 5 }, // Continúa la historia
+            { text: 'No soy fanática, pero es un buen juego.', nextScene: 5 }, // Continúa la historia
             { text: '¿Qué te hace pensar que todo esto me interesa en lo absoluto?', nextScene: 4 } // Bad Ending 1
         ]
     },
@@ -49,8 +51,9 @@ const scenes = [
         character: 'visual/orif2.png',
         music: 'visual/fiesta.mp3',
         dialogues: [
-            { speaker: '???', text: 'Disculpá. Creo que hablé demasiado, mejor te dejo en paz.' },
-            { speaker: '', text: 'Pero antes de que llegaras a disculparte, la desconocida se fue apurada, mezclándose entre la gente de la fiesta y desapareciendo de tu vida. No entendiste muy bien qué acaba de pasar, pero aún así te preguntas qué hubiera pasado si continuabas la conversación.' }
+            { speaker: 'Angie', text: '...' },
+            { speaker: '???', text: 'Disculpá. Creo que hablé demasiado y te incomodé, mejor te dejo en paz.' },
+            { speaker: '', text: 'Y tan rápida y nerviosamente como llegó, se fue, mezclándose entre la gente de la fiesta y desapareciendo de tu vida. No entendiste muy bien qué acaba de pasar, pero aún así te preguntas qué hubiera pasado si continuabas con la conversación.' }
         ],
         endingType: 'Neutral Ending', // Neutral Ending 1
         choices: null // No hay más elecciones
@@ -60,46 +63,25 @@ const scenes = [
         character: 'visual/orif9.png',
         music: 'visual/fiesta.mp3',
         dialogues: [
+            { speaker: 'Angie', text: '¿Qué te hace pensar que todo esto me interesa en lo absoluto?' },
             { speaker: '???', text: '... Perdón... Solamente intentaba hablarte...' },
-            { speaker: '', text: 'Se va corriendo, desapareciendo entre la gente. Ni siquiera intentás seguirla. Es una rarita. Aunque, no sabés bien por qué, pero te sentís un poco culpable. Podrías haber sido más amable.' }
+            { speaker: '', text: 'Rápidamente se fue corriendo, desapareciendo entre la gente. Ni siquiera intentaste seguirla. Aunque, no sabés bien por qué, pero te sentiste un poco culpable. Podrías haber sido más amable.' }
         ],
         endingType: 'Bad Ending', // Bad Ending 1
         choices: null // No hay más elecciones
     },
     {
-        background: 'visual/fiesta.jpg',
-        character: 'visual/orif4.png',
+        background: 'visual/fiesta3.png',
         music: 'visual/fiesta.mp3',
         dialogues: [
-            { speaker: 'Angie', text: 'Está bien. No soy muy fan de eso, pero es un buen dato curioso.' },
-            { speaker: '???', text: '¿En serio? En realidad estaba buscando excusas para hablarte. No estoy acostumbrada a esto. No te incomodé con lo que te contaba, ¿o sí?' },
-            { speaker: 'Angie', text: 'No te preocupes. Aunque no sea muy fanática del Zelda, a mí también me gustan las cosas de terror.' }
-        ]
-    },
-    {
-        background: 'visual/fiesta.jpg',
-        character: 'visual/orif1.png',
-        music: 'visual/fiesta.mp3',
-        dialogues: [
-            { speaker: '???', text: '¿De verdad pensás eso? Tenía miedo de espantarte, soy malísima para iniciar conversación.' },
-            { speaker: 'Angie', text: 'No, para nada. De hecho, todo esto fue refrescante... aunque no voy a negar que un poco extraño. Pero lo necesitaba.' }
-        ]
-    },
-    {
-        background: 'visual/fiesta.jpg',
-        character: 'visual/orif4.png',
-        music: 'visual/fiesta.mp3',
-        dialogues: [
-            { speaker: '???', text: 'Me alegra ser de ayuda. ¿Sabés? Acabo de darme cuenta de que hablé un montón y no pregunté ni tu nombre. ¿Cómo te llamás?' }
-        ]
-    },
-    {
-        background: 'visual/fiesta.jpg',
-        character: 'visual/orif3.png',
-        music: 'visual/fiesta.mp3',
-        dialogues: [
+            { speaker: 'Angie', text: 'Supongo que es un buen juego. Y ese es un dato... Interesante.' },
+            { speaker: '???', text: '¿En serio? No estoy acostumbrada a esto de hablar con gente en fiestas. O ir a fiestas... ᵒ ʰᵃᵇˡᵃʳ ᶜᵒⁿ ᵍᵉⁿᵗᵉ ᵉⁿ ᵍᵉⁿᵉʳᵃˡ.', showCharacter: false },
+            { speaker: 'Angie', text: 'No te preocupes. Aunque no sea muy fanática del Zelda, a mí también me gustan las cosas de terror.' },
+            { speaker: '???', text: '¿De verdad? Tenía miedo de espantarte, soy malísima para iniciar conversación.', showCharacter: false },
+            { speaker: 'Angie', text: 'No, para nada. De hecho, todo esto fue refrescante... aunque no voy a negar que un poco extraño. Pero lo necesitaba.' },
+            { speaker: '???', text: 'Me alegra ser de ayuda. ¿Sabés? Acabo de darme cuenta de que hablé un montón y no pregunté ni tu nombre. ¿Cómo te llamás?', showCharacter: false },
             { speaker: 'Angie', text: 'Angie. Es un gusto... Ehh...' },
-            { speaker: 'Ori', text: 'Oriana. El placer es mío.' }
+            { speaker: 'Ori', text: 'Oriana. El placer es mío.', showCharacter: false }
         ],
         choices: [
             { text: 'Bueno, creo que se hizo tarde ya. Debería volver a mi casa.', nextScene: 9 }, // Neutral Ending 1
